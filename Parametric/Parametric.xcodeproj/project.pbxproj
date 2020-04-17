@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		4F82523324491B650046A2A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F82523124491B650046A2A9 /* Main.storyboard */; };
 		4F82523524491B6C0046A2A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F82523424491B6C0046A2A9 /* Assets.xcassets */; };
 		4F82523824491B6C0046A2A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F82523624491B6C0046A2A9 /* LaunchScreen.storyboard */; };
+		4F82524124491BE30046A2A9 /* SwiftProcessing in Frameworks */ = {isa = PBXBuildFile; productRef = 4F82524024491BE30046A2A9 /* SwiftProcessing */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F82524124491BE30046A2A9 /* SwiftProcessing in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = Parametric;
+			packageProductDependencies = (
+				4F82524024491BE30046A2A9 /* SwiftProcessing */,
+			);
 			productName = Parametric;
 			productReference = 4F82522424491B650046A2A9 /* Parametric.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 4F82521B24491B650046A2A9;
+			packageReferences = (
+				4F82523F24491BE30046A2A9 /* XCRemoteSwiftPackageReference "SwiftProcessing" */,
+			);
 			productRefGroup = 4F82522524491B650046A2A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F82523F24491BE30046A2A9 /* XCRemoteSwiftPackageReference "SwiftProcessing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jjkaufman/SwiftProcessing";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F82524024491BE30046A2A9 /* SwiftProcessing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F82523F24491BE30046A2A9 /* XCRemoteSwiftPackageReference "SwiftProcessing" */;
+			productName = SwiftProcessing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F82521C24491B650046A2A9 /* Project object */;
 }
